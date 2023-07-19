@@ -4,5 +4,6 @@
         <page name='variable'/>
         <page name='dataType'/>
         <page name='fuction'/>
+        <page name='conditional'/>
     </pages>
 </playground>
