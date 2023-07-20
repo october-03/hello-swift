@@ -6,5 +6,6 @@
         <page name='fuction'/>
         <page name='conditional'/>
         <page name='loop'/>
+        <page name='optional'/>
     </pages>
 </playground>
