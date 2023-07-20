@@ -7,5 +7,6 @@
         <page name='conditional'/>
         <page name='loop'/>
         <page name='optional'/>
+        <page name='struct'/>
     </pages>
 </playground>
