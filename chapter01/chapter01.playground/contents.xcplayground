@@ -8,5 +8,7 @@
         <page name='loop'/>
         <page name='optional'/>
         <page name='struct'/>
+        <page name='class'/>
+        <page name='properties'/>
     </pages>
 </playground>
