@@ -10,5 +10,6 @@
         <page name='struct'/>
         <page name='class'/>
         <page name='properties'/>
+        <page name='validate'/>
     </pages>
 </playground>
