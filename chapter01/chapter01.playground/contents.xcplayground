@@ -12,5 +12,6 @@
         <page name='properties'/>
         <page name='validate'/>
         <page name='protocol'/>
+        <page name='extension'/>
     </pages>
 </playground>
