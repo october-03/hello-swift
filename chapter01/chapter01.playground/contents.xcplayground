@@ -15,5 +15,6 @@
         <page name='extension'/>
         <page name='enum'/>
         <page name='handling'/>
+        <page name='closure'/>
     </pages>
 </playground>
