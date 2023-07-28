@@ -16,5 +16,6 @@
         <page name='enum'/>
         <page name='handling'/>
         <page name='closure'/>
+        <page name='highOrderFunc'/>
     </pages>
 </playground>
