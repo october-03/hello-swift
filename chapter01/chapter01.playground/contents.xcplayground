@@ -14,5 +14,6 @@
         <page name='protocol'/>
         <page name='extension'/>
         <page name='enum'/>
+        <page name='handling'/>
     </pages>
 </playground>
