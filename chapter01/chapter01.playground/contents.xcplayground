@@ -13,5 +13,6 @@
         <page name='validate'/>
         <page name='protocol'/>
         <page name='extension'/>
+        <page name='enum'/>
     </pages>
 </playground>
