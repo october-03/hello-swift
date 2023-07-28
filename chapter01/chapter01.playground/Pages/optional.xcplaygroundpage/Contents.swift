@@ -19,3 +19,21 @@ if let result = name {
 } else {
   print("해당 값은 nil 입니다.")
 }
+
+// 옵셔널 체이닝
+struct Developer {
+  let name: String
+}
+
+struct Company {
+  let name: String
+  var developer: Developer?
+}
+
+var company = Company(name: "OCTOBER")
+print(company.developer) // nil
+
+var developer = Developer(name: "Jae Young")
+company.developer = developer
+print(company.developer?.name) // Optional("Jae Young")
+print(company.developer!.name) // Jae Young
