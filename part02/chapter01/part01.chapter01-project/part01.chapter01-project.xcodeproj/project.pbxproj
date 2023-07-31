@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		942ABBB12A77B04D006AE6DC /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942ABBB02A77B04D006AE6DC /* Quote.swift */; };
 		94D0051B2A77A06700FFEA64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D0051A2A77A06700FFEA64 /* AppDelegate.swift */; };
 		94D0051D2A77A06700FFEA64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D0051C2A77A06700FFEA64 /* SceneDelegate.swift */; };
 		94D0051F2A77A06700FFEA64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D0051E2A77A06700FFEA64 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		942ABBB02A77B04D006AE6DC /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		94D005172A77A06700FFEA64 /* part01.chapter01-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "part01.chapter01-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D0051A2A77A06700FFEA64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94D0051C2A77A06700FFEA64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				94D0051A2A77A06700FFEA64 /* AppDelegate.swift */,
 				94D0051C2A77A06700FFEA64 /* SceneDelegate.swift */,
 				94D0051E2A77A06700FFEA64 /* ViewController.swift */,
+				942ABBB02A77B04D006AE6DC /* Quote.swift */,
 				94D005202A77A06700FFEA64 /* Main.storyboard */,
 				94D005232A77A06800FFEA64 /* Assets.xcassets */,
 				94D005252A77A06800FFEA64 /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				942ABBB12A77B04D006AE6DC /* Quote.swift in Sources */,
 				94D0051F2A77A06700FFEA64 /* ViewController.swift in Sources */,
 				94D0051B2A77A06700FFEA64 /* AppDelegate.swift in Sources */,
 				94D0051D2A77A06700FFEA64 /* SceneDelegate.swift in Sources */,

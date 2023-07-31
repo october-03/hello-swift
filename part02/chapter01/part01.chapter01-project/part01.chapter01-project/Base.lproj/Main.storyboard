@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="랜덤 명언 생성기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNl-HR-0Li">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="명언" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNl-HR-0Li">
                                 <rect key="frame" x="20" y="79" width="353" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -25,14 +25,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="byu-SY-jvs">
                                 <rect key="frame" x="20" y="124" width="353" height="200"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8i-Ft-eGI">
-                                        <rect key="frame" x="20" y="20" width="313" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8i-Ft-eGI">
+                                        <rect key="frame" x="20" y="20" width="313" height="140"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93z-IX-Hv3">
-                                        <rect key="frame" x="20" y="159" width="313" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93z-IX-Hv3">
+                                        <rect key="frame" x="20" y="180" width="313" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -45,23 +45,45 @@
                                     <constraint firstItem="93z-IX-Hv3" firstAttribute="leading" secondItem="byu-SY-jvs" secondAttribute="leading" constant="20" id="Xlx-b1-pdf"/>
                                     <constraint firstItem="n8i-Ft-eGI" firstAttribute="top" secondItem="byu-SY-jvs" secondAttribute="top" constant="20" id="apu-fE-l38"/>
                                     <constraint firstAttribute="trailing" secondItem="n8i-Ft-eGI" secondAttribute="trailing" constant="20" id="dYW-Dz-BMH"/>
+                                    <constraint firstItem="93z-IX-Hv3" firstAttribute="top" secondItem="n8i-Ft-eGI" secondAttribute="bottom" constant="20" id="dlS-PJ-KQP"/>
                                     <constraint firstAttribute="height" constant="200" id="lNw-Ub-7BA"/>
                                     <constraint firstItem="n8i-Ft-eGI" firstAttribute="leading" secondItem="byu-SY-jvs" secondAttribute="leading" constant="20" id="plR-FP-wda"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efI-45-Bsp">
+                                <rect key="frame" x="153" y="348" width="87.333333333333314" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="명언 생성"/>
+                                <connections>
+                                    <action selector="generateQuote:" destination="BYZ-38-t0r" eventType="touchUpInside" id="duX-dD-EB0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RNl-HR-0Li" secondAttribute="trailing" constant="20" id="1Ao-6Q-cK4"/>
+                            <constraint firstItem="efI-45-Bsp" firstAttribute="centerX" secondItem="byu-SY-jvs" secondAttribute="centerX" id="73c-Fw-Vk7"/>
                             <constraint firstItem="byu-SY-jvs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Esu-SN-aVW"/>
+                            <constraint firstItem="efI-45-Bsp" firstAttribute="top" secondItem="byu-SY-jvs" secondAttribute="bottom" constant="24" id="KXu-9g-Ryi"/>
                             <constraint firstItem="byu-SY-jvs" firstAttribute="top" secondItem="RNl-HR-0Li" secondAttribute="bottom" constant="20" id="Lmq-DG-EFw"/>
                             <constraint firstItem="RNl-HR-0Li" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NqO-ze-pu4"/>
+                            <constraint firstItem="efI-45-Bsp" firstAttribute="centerX" secondItem="byu-SY-jvs" secondAttribute="centerX" id="Z6q-tN-72p"/>
                             <constraint firstItem="byu-SY-jvs" firstAttribute="top" secondItem="RNl-HR-0Li" secondAttribute="bottom" constant="24" id="i26-Md-LPH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="byu-SY-jvs" secondAttribute="trailing" constant="20" id="oKg-QW-4tO"/>
                             <constraint firstItem="RNl-HR-0Li" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="yOU-di-Tca"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Lmq-DG-EFw"/>
+                                <exclude reference="Z6q-tN-72p"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="characterLabel" destination="93z-IX-Hv3" id="OJh-0p-3Yu"/>
+                        <outlet property="quoteLabel" destination="n8i-Ft-eGI" id="xwl-vg-ezs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
