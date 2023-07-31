@@ -33,6 +33,9 @@
                                 <rect key="frame" x="153" y="363" width="87.333333333333314" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="색상 변경"/>
+                                <connections>
+                                    <action selector="onColorChange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0oX-0K-g1L"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -49,6 +52,9 @@
                             <constraint firstItem="qbG-Cp-7hN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="xwP-gz-hUu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="colorContainer" destination="bid-o5-9jd" id="YUy-VH-BhW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
