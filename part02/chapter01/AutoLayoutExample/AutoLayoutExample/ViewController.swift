@@ -16,7 +16,12 @@ class ViewController: UIViewController {
   }
 
   @IBAction func onColorChange(_ sender: UIButton) {
-    self.colorContainer.backgroundColor = UIColor.blue
+    print(colorContainer.backgroundColor!)
+    if colorContainer.backgroundColor == UIColor.green {
+      self.colorContainer.backgroundColor = UIColor.blue
+    } else {
+      self.colorContainer.backgroundColor = UIColor.green
+    }
     print("onClick Color Change Button")
   }
   
