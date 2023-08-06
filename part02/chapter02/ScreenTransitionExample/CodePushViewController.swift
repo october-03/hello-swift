@@ -8,7 +8,9 @@
 import UIKit
 
 class CodePushViewController: UIViewController {
-
+  @IBOutlet weak var propsLabel: UILabel!
+  var props: String?
+  
   override func viewDidLoad() {
       super.viewDidLoad()
   }

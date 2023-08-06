@@ -7,8 +7,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, SendDataDelegate {
+  @IBOutlet weak var propsLabel: UILabel!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     print("뷰 로드")
@@ -35,13 +36,20 @@ class ViewController: UIViewController {
   }
   
   @IBAction func handleCodePushButton(_ sender: UIButton) {
-    guard let viewController = self.storyboard?.instantiateViewController(identifier: "CodePushViewController") else { return }
+    guard let viewController = self.storyboard?.instantiateViewController(identifier: "CodePushViewController") as? CodePushViewController else { return }
     self.navigationController?.pushViewController(viewController, animated: true)
   }
   
   @IBAction func handleCodePresentButton(_ sender: UIButton) {
-    guard let viewController = self.storyboard?.instantiateViewController(identifier: "CodePresentViewController") else { return }
+    guard let viewController = self.storyboard?.instantiateViewController(identifier: "CodePresentViewController") as? CodePresentViewController else { return }
+    viewController.props = "This is props"
+    viewController.delegate = self
     self.present(viewController, animated: true)
+  }
+  
+  func sendData(_ props: String) {
+    self.propsLabel.text = props
+    self.propsLabel.sizeToFit()
   }
 }
 
