@@ -61,3 +61,9 @@ http://192.168.0.92:9998 (API를 띄운 맥의 IP)
 3. 사용할 Task를 결정하고 그에 맞는 Completion Handler나 Delegate 메소드들을 작성
 4. 해당 Task를 실행
 5. Task 완료 후 Completion Handler 클로저가 호출이 됨
+
+## Alamofire
+Swift 기반의 HTTP 네트워킹 라이브러리
+
+### URLSession 대신 Alamofire를 사용하는 이유
+코드의 간소화, 가독성 측면에서 도움을 주고 여러 기능을 직접 구축하지 않아도 쉽게 사용할 수 있음

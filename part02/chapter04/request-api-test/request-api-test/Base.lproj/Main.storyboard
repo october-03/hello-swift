@@ -22,16 +22,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdE-HZ-HYz">
+                                <rect key="frame" x="175.66666666666666" y="160" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="kcG-jH-v6U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="I4e-Pd-ASC"/>
                             <constraint firstItem="kcG-jH-v6U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IFY-RP-Rje"/>
+                            <constraint firstItem="pdE-HZ-HYz" firstAttribute="top" secondItem="kcG-jH-v6U" secondAttribute="bottom" constant="40" id="Pym-n0-mOk"/>
+                            <constraint firstItem="pdE-HZ-HYz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X6X-fB-pzW"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="nameLabel" destination="kcG-jH-v6U" id="GcM-PX-lqQ"/>
+                        <outlet property="nicknameLabel" destination="pdE-HZ-HYz" id="wTL-eA-TLj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
